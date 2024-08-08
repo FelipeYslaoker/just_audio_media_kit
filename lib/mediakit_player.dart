@@ -134,6 +134,14 @@ class MediaKitPlayer extends AudioPlayerPlatform {
     ];
   }
 
+  @override
+  Future<SetAndroidAudioAttributesResponse> setAndroidAudioAttributes(
+    SetAndroidAudioAttributesRequest request,
+  ) async {
+    final response = SetAndroidAudioAttributesResponse();
+    return response;
+  }
+
   PlaylistMode _loopModeToPlaylistMode(LoopModeMessage loopMode) {
     return switch (loopMode) {
       LoopModeMessage.off => PlaylistMode.none,

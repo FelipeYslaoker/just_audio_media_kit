@@ -79,6 +79,13 @@ class JustAudioMediaKit extends JustAudioPlatform {
     }
   }
 
+  Future<SetAndroidAudioAttributesResponse> setAndroidAudioAttributes(
+    SetAndroidAudioAttributesRequest request,
+  ) async {
+    final response = SetAndroidAudioAttributesResponse();
+    return response;
+  }
+
   /// Registers the plugin with [JustAudioPlatform]
   static void registerWith() {
     JustAudioPlatform.instance = JustAudioMediaKit();
